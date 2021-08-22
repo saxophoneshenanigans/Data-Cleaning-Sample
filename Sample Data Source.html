@@ -1,0 +1,240 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/assets/5eaacd49/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.infieldlabel.min.js"></script>
+<title>Sample Data Scraping Source</title>
+                <meta name="language" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="/js/fancybox/jquery.fancybox-1.3.4.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/login.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/form.css"/>
+                <script src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <script src="/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+
+
+    </head>
+
+    <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+            <div style="margin:0 auto;padding: 2%; width:96%; display:block;overflow:hidden;">
+
+<h1 style='text-align:center;text-transform:uppercase;'>Item Number by Deparment / Issue</h1> <h3>Customer: Sample Data</h3><table border="1" cellpadding="5" cellspacing="1" class="mytable" style="border:1px solid black;border-collapse:collapse;text-align:center;width:100%;">
+<tbody>
+<tr>
+<td></td><td></td><td></td><td colspan='2'><b>Received</b></td><td colspan='2'><b>Completed</b></td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td><b>Item Number</b></td><td><b>CustNo-LocNo</b></td><td><b> Requested By</b></td><td><b>Date</b></td><td><b>Time</b></td><td><b>Date</b></td><td><b>Time</b></td><td><b>Department</b></td><td><b>Location <br>ID</b></td><td><b>Issue</b></td><td><b>Log</b></td></tr>
+<tr>
+<td>105133</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-04</td><td>09:42:46</td><td>2021-12-04</td><td>09:54:39</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 1</td></tr>
+<tr>
+<td>105286</td><td>0000001-00001</td><td>Smith, Jane</td><td>2021-12-04 12:24:41</td><td>12:24:41</td><td>2021-12-04</td><td>15:20:22</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Machine Error</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 1.5
+<tr>
+<td>105432</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-04</td><td>15:59:28</td><td>2021-12-04</td><td>16:35:12</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 2</td></tr>
+<tr>
+<td>558563</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-12</td><td>19:46:02</td><td>2021-12-12</td><td>20:10:11</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 3 </td></tr>
+<tr>
+<td>559398</td><td>0000001-00001</td><td>Dept 2 Monitoring</td><td>2021-12-14</td><td>18:18:10</td><td>2021-12-14</td><td>18:20:51</td><td>Dept 2 - Dept 2</td><td></td><td>No Sales</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 4</td></tr>
+<tr>
+<td>559484</td><td>0000001-00001</td><td>Dept 2 Monitoring</td><td>2021-12-15</td><td>09:21:03</td><td>2021-12-15</td><td>09:38:10</td><td>Dept 2 - Dept 2</td><td></td><td>Dept 2-MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 5</td></tr>
+<tr>
+<td>560211</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-18</td><td>12:51:43</td><td>2021-12-18</td><td>14:13:31</td><td>Dept 1 - Dept 1</td><td>123001</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 6 </td></tr>
+<tr>
+<td>561380</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-20</td><td>13:52:18</td><td>2021-12-20</td><td>18:14:56</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 7</td></tr>
+<tr>
+<td>563567</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-26</td><td>15:19:27</td><td>2021-12-26</td><td>18:14:09</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 8 </td></tr>
+<tr>
+<td>564615</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-28</td><td>18:56:32</td><td>2021-12-29</td><td>12:33:10</td><td>Dept 1 - Dept 1</td><td>123001</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 9 </td></tr>
+<tr>
+<td>564616</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-12-28</td><td>18:56:43</td><td>2021-12-29</td><td>12:20:42</td><td>Dept 1 - Dept 1</td><td>123001</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 10</td></tr>
+<tr>
+<td>565525</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-01</td><td>13:48:49</td><td>2021-11-01</td><td>13:57:36</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 11
+<tr>
+<td>565564</td><td>0000001-00001</td><td>Cooper, Kathey</td><td>2021-11-01 15:00:14</td><td>15:00:14</td><td>2021-11-02</td><td>12:45:15</td><td>Dept 2 - Dept 2</td><td>123002</td><td>Dept 2-MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 12
+<tr>
+<td>566380</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-03</td><td>10:46:35</td><td>2021-11-03</td><td>11:15:58</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 13
+<tr>
+<td>566495</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-03</td><td>13:26:43</td><td>2021-11-03</td><td>14:36:13</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 14
+<tr>
+<td>567198</td><td>0000001-00001</td><td>Dept 2 Monitoring</td><td>2021-11-04</td><td>18:18:33</td><td>2021-11-04</td><td>18:23:09</td><td>Dept 2 - Dept 2</td><td></td><td>Dept 2-MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 15
+<tr>
+<td>567511</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-11</td><td>12:13:49</td><td>2021-11-11</td><td>12:15:39</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td>X</td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 16
+<tr>
+<td>568746</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-09</td><td>10:34:27</td><td>2021-11-09</td><td>10:48:46</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 17
+<tr>
+<td>569467</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-10</td><td>19:32:33</td><td>2021-11-11</td><td>07:24:20</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 18
+<tr>
+<td>569924</td><td>0000001-00001</td><td>Dept 2 Monitoring <Dept 2monito</td><td>2021-11-11</td><td>16:23:31</td><td>2021-11-11</td><td>17:03:12</td><td>Dept 1 - Dept 1</td><td>123001</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 19
+<tr>
+<td>119124</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-11</td><td>21:55:28</td><td>2021-11-12</td><td>12:41:39</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 20
+<tr>
+<td>119082</td><td>0000001-00001</td><td>Dept 2 Monitoring</td><td>2021-11-12</td><td>08:34:43</td><td>2021-11-12</td><td>08:41:56</td><td>Dept 2 - Dept 2</td><td>123001</td><td>No Sales</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 21
+<tr>
+<td>119118</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-12</td><td>10:37:01</td><td>2021-11-12</td><td>10:39:15</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 22
+<tr>
+<td>119361</td><td>0000001-00001</td><td>Dept 2 Monitoring</td><td>2021-11-13</td><td>18:19:59</td><td>2021-11-13</td><td>18:39:11</td><td>Dept 2 - Dept 2</td><td></td><td>Dept 2-MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 23
+<tr>
+<td>119799</td><td>0000001-00001</td><td>Smith, Jane</td><td>2021-11-14 15:33:02</td><td>15:33:02</td><td>2021-11-14</td><td>16:07:22</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 24
+<tr>
+<td>119887</td><td>0000001-00001</td><td>Dept 2 Monitoring <Dept 2monito</td><td>2021-11-14</td><td>18:28:45</td><td>2021-11-14</td><td>18:35:55</td><td>Dept 2 - Dept 2</td><td>123001</td><td>Dept 2-MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 25
+<tr>
+<td>119895</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-14</td><td>19:14:49</td><td>2021-11-14</td><td>19:27:49</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 26
+<tr>
+<td>123496</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-18</td><td>11:49:25</td><td>2021-11-18</td><td>13:28:29</td><td>Dept 1 - Dept 1</td><td>123001</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 27
+<tr>
+<td>123525</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-18</td><td>12:47:40</td><td>2021-11-18</td><td>12:54:19</td><td>Dept 1 - Dept 1</td><td>123001</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 28
+<tr>
+<td>124608</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-21</td><td>17:11:18</td><td>2021-11-21</td><td>17:32:09</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 29
+<tr>
+<td>112578</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-25</td><td>21:14:44</td><td>2021-11-26</td><td>08:23:41</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 30
+<tr>
+<td>576322</td><td>0000001-00001</td><td>CC / Web Email Script</td><td>2021-11-28</td><td>14:56:04</td><td>2021-11-28</td><td>15:22:54</td><td>Dept 1 - Dept 1</td><td>123002</td><td>Dept 1 - MISC</td><td> </td></tr>
+<tr>
+<td align='left' colspan='9'>Notes:<br />
+Sample description 31
+</tbody>
+</table><br><h3 >Overall Summary</h3><table border="1" cellpadding="5" cellspacing="1" class="mytable" style="border:1px solid black;border-collapse:collapse;text-align:center;width:50%;">
+<tbody>
+<tr>
+<td><b>Department</b></td><td><b>Issue</b></td><td><b>Total</b></td><td><b>Customer</b></td><td><b>Sample Business 2</b></td></tr>
+<tr>
+<td rowspan='3'>Dept 2 - Dept 2</td><td>Dept 2-MISC</td><td>5</td><td>0</td><td>5</td></tr>
+<tr>
+<td>No Sales</td><td>2</td><td>0</td><td>2</td></tr>
+<tr>
+<td>Connection Error</td><td>2</td><td>0</td><td>2</td></tr>
+<tr>
+<td rowspan='2'>Dept 1 - Dept 1</td><td>Dept 1 - MISC</td><td>24</td><td>1</td><td>23</td></tr>
+<tr>
+<td>Machine Error</td><td>1</td><td>0</td><td>1</td></tr>
+<tr>
+<td align='right' colspan='2'><b>Overall Total</b></td><td>34</td><td>1</td><td>33</td></tr>
+<tr>
+<td align='right' colspan='2'><b>% resolved</b></td><td>100%</td><td>2.94%</td><td>97.11%</td></tr>
+</tbody>
+</table><p></p><h3 style='margin-bottom:0px;'>CRITERIA</h3><hr style='border:solid 1px #000;'><b>REPORT DATE:</b> 11-29-2021 11:07:28   <b>CUSTOMER: </b>SAMPLE BUSINESS   <b>LOCATION:</b> SAMPLE BUSINESS ,123 Fake St ,Columbia ,MO ,65201   <b>EQUIPMENT:</b> ALL   <b>DEPARTMENT:</b> ALL   <b>ISSUE:</b> ALL   <b>TYPE:</b> DETAIL   <BR><BR><BR>
+</div>
+
+<style>
+
+@font-face {
+
+	font-family: 'Calibri';
+
+	src:  url('Calibri.ttf')  format('truetype');
+
+	}
+
+	h1,h2,h3,h4,table,tr,td{
+
+		 font-family: 'Calibri', sans-serif;
+
+	}
+
+</style>
+
+
+
+
+
+
+
+
+    </body>
+</html>
